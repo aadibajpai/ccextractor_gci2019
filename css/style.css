@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono');
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll.js Pre-req.  */
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+/* Global Font */
+
+* {
+  font-family: Ubuntu, sans-serif;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  background-color: rgba(25, 25, 25, 0.5);
+  display: flex;
+}
+
+strong {
+  color: #EF4648;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-nav {
+  display: flex;
+  padding-right: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #F36F38;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #EF4648 !important;
+}
+
+.logotype {
+  position: relative;
+  padding-left: 16px;
+  top: 3px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-content: center;
+}
+
+.nav-link:active {
+  color: #EF4648;
+}
+
+.btn-outline,
+.btn-outline-light {
+  border-radius: 30px;
+  border-color: #F36F38;
+  color: #F36F38;
+}
+
+.btn-outline:hover,
+.btn-outline-light:hover {
+  background-color: #F36F38;
+  border-color: #F36F38;
+  color: #FFFFFF
+}
+
+#languages {
+  position: relative;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+#searchBar {
+  border-radius: 20px;
+}
+
+.jumbotron {
+  border-radius: 0 !important;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-color: #F36F38;
+  border-color: #F36F38;
+  border-radius: 20px;
+  color: #FFFFFF
+}
+
+/* Main Sector */
+
+#maincontainer {
+  position: relative;
+  align-content: flex-start;
+  margin-top: 8rem;
+  color: white;
+}
+
+#main {
+  margin-top: -82px;
+  margin-bottom: 0px;
+  background-image: url("../images/mainBackground.svg");
+  background-color: #582841;
+  height: 45rem;
+  min-height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#mainBackgroundItem {
+  position: relative;
+  float: right;
+  margin: 6rem;
+}
+
+#mainH1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+#mainH3 {
+  position: relative;
+  top: 3rem;
+  color: #FFFFFF;
+}
+
+#subMain {
+  position: relative;
+  top: 3.5rem;
+  color: #FFFFFF;
+}
+
+#subCont {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+/* Main Sector - Program Buttons */
+
+#gciButton,
+#gsocButton {
+  position: relative;
+  top: 3.75rem;
+  color: #FFFFFF;
+}
+
+/* Google Code-in Sector */
+
+#sect2Background {
+  background-image: url("../images/sect2Background.svg");
+  background-color: #582841;
+  height: 45rem;
+  min-height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#sect2BackgroundItem {
+  position: relative;
+  float: left;
+}
+
+#sect2container {
+  position: relative;
+  color: white;
+  margin-left: 32rem;
+  padding: 40px;
+}
+
+#sectHead {
+  font-weight: bold;
+}
+
+#gci_logo_stylized {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-left: -0.75rem;
+}
+
+/* Google Summer of Code Sector */
+
+#sect3Background {
+  background-image: url("../images/sect3Background.svg");
+  background-color: #582841;
+  height: 45rem;
+  margin-top: -36px;
+  min-height: 50%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#sect3BackgroundItem {
+  position: relative;
+  float: right;
+}
+
+#sect3container {
+  position: relative;
+  color: white;
+  padding-top: 3rem;;
+}
+
+#gsoc_logo_stylized {
+  position: relative;
+  margin-left: -0.75rem;
+}
+
+/* Sector Links */
+
+.sectLinks:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.sectLinks {
+  color: #F99E4C;
+  font-size: 1.25rem;
+  margin-left: -1.25rem;
+}
