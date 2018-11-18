@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="description" content="CCExtractor for GCI and GSoC students">
@@ -31,9 +31,10 @@
           <img id="logo" src="images/ccx_header_animated.svg" width="200px" height="50px" alt="" />
           <!--<h3 class="logotype"><strong>CC</strong>Extractor</h3>-->
         </a>
-          <ul class="nav navbar-nav navbar-left mr-auto">
-
-          </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="nav navbar-nav navbar-dark navbar-right ml-auto">
               <li class="nav-item active">
                   <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
@@ -41,29 +42,37 @@
               <li class="nav-item">
                   <a class="nav-link" href="pages/about.htm">ABOUT US</a>
               </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="documentation.htm">DOCUMENTATION</a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    DOCUMENTATION
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="pages/usr_doc.htm">User Documentation</a>
+                  <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pages/tech_doc.htm">Technical Documentation</a>
+                  </div>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     PROGRAMS
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="ccxgci.htm">Google Code-in 2018</a>
+                    <a class="dropdown-item" href="pages/ccxgci.htm">Google Code-in 2018</a>
                   <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="ccxgsoc.htm">Google Summer of Code 2019</a>
+                    <a class="dropdown-item" href="pages/ccxgsoc.htm">Google Summer of Code 2019</a>
                   </div>
               </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit"><span class="fas fa-search"></span></button>
+            <button class="btn btn-outline-light" id="searchButton" type="submit"><i class="fas fa-search"></i></button>
           </form>
+        </div>
         </div>
     </div>
 
     <div class="jumbotron" id="main">
-      <img class="svgItem floating" id="mainBackgroundItem" src="images/mainBackgroundItem.svg" alt="illus_1" width="650px" height="500px" />
+      <img class="svgItem floating" id="mainBackgroundItem" src="images/mainBackgroundItem.svg" alt="illus_1" />
       <div class="container container-fluid">
         <div class="wrapper" id="maincontainer">
           <h1 class="mainH1">Subtitle Extraction?</h1>
@@ -91,51 +100,51 @@
     </div>
 
     <div class="jumbotron" id="sect2Background">
-      <img class="svgItem floating" id="sect2BackgroundItem" src="images/sect2BackgroundItem.svg" alt="illus_2" width="650px" height="500px" />
         <div class="container container-fluid">
+          <img class="svgItem floating" id="sect2BackgroundItem" src="images/sect3BackgroundItem.svg" alt="illus_2" />
           <div class="wrapper" id="sect2container">
             <img src="images/gci_stylized.svg" id="logo_stylized" width="280px" height="80px;" alt="gci_stylized" />
-            <h1 class="sectHead">Here for Google Code-in?</h1>
-            <h4 class="sectSubHead">
-              "Google Code-in is a contest to introduce <br /> pre-university students (ages 13-17) to <br />open source software development."
-            </h4>
-            <p class="sectPara">
-                Check out these links to get started!
-            </p>
-            <ul class="sectLinks" id="sectLinks_1" style="list-style-type: none;">
-              <li>
-                <a href="#" class="sectLinks">Welcome to Google Code-In 2018 and CCExtractor!</a>
-              </li>
-              <li>
-                <a href="#" class="sectLinks">Code-in for Designers</a>
-              </li>
-              <li>
-                <a href="#" class="sectLinks">Getting Familiar with Tags</a>
-              </li>
-              <li>
-                <a href="#" class="sectLinks">Things to Know</a>
-              </li>
-              <li>
-                <a href="#" class="sectLinks">Why is CCExtractor Written in C?</a>
-              </li>
-            </ul>
+              <h1 class="sectHead">Here for Google Code-in?</h1>
+              <h4 class="sectSubHead">
+                "Google Code-in is a contest to introduce <br /> pre-university students (ages 13-17) to <br />open source software development."
+              </h4>
+              <p class="sectPara">
+                  Check out these links to get started!
+              </p>
+              <ul class="sectLinks" id="sectLinks_1">
+                <li>
+                  <a href="#" class="sectLinks">Welcome to Google Code-In 2018 and CCExtractor!</a>
+                </li>
+                <li>
+                  <a href="#" class="sectLinks">Code-in for Designers</a>
+                </li>
+                <li>
+                  <a href="#" class="sectLinks">Getting Familiar with Tags</a>
+                </li>
+                <li>
+                  <a href="#" class="sectLinks">Things to Know</a>
+                </li>
+                <li>
+                  <a href="#" class="sectLinks">Why is CCExtractor Written in C?</a>
+                </li>
+              </ul>
           </div>
         </div>
     </div>
 
     <div class="jumbotron" id="sect3Background">
-      <img class="svgItem floating" id="sect3BackgroundItem" src="images/sect3BackgroundItem.svg" alt="illus_3" width="650px" height="500px" />
         <div class="container container-fluid">
+          <img class="svgItem floating" id="sect3BackgroundItem" src="images/sect3BackgroundItem.svg" alt="illus_3" />
           <div class="wrapper" id="sect3container">
             <img src="images/gsoc_stylized.svg" id="logo_stylized" width="420px" height="100px;" alt="gsoc_stylized" />
-            <h1 class="sectHead">Participating in Summer of Code?</h1>
+            <h1 class="sectHead">Participating in <br />Summer of Code?</h1>
             <h4 class="sectSubHead">
               "Google Summer of Code is a global program <br />focused on bringing more student developers into <br />open source software development."
             </h4>
             <p class="sectPara">
                 Check out these links to get started!
             </p>
-            <ul class="sectLinks" style="list-style-type: none;">
+            <ul class="sectLinks">
               <li>
                 <a href="#" class="sectLinks">Google Summer of Code with CCExtractor!</a>
               </li>

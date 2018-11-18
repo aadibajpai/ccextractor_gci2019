@@ -1,4 +1,4 @@
-window.sr = new ScrollReveal({reset: true});
+window.sr = new ScrollReveal();
 
 var fadeFromTop = {
   delay: 100,

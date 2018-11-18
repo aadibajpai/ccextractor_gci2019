@@ -38,8 +38,15 @@
               <li class="nav-item active">
                   <a class="nav-link" href="about.html">ABOUT US<span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="documentation.html">DOCUMENTATION</a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    DOCUMENTATION
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="usr_doc.htm">User Documentation</a>
+                  <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="tech_doc.htm">Technical Documentation</a>
+                  </div>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,22 +66,23 @@
         </div>
     </div>
 
-    <div class="jumbotron" id="about_JT">
+    <div class="jumbotron pagesJT">
         <div id="container container-fluid">
           <div class="animated_header">
-            <img src="../images/about-us_animated.svg" id="about-us_animated" alt="ABOUT" width="768px" height="480px;" />
+            <img src="../images/about-us_animated.svg" class="animated_svg" alt="ABOUT" width="768px" height="480px;" />
           </div>
         </div>
     </div>
 
-    <div class="jumbotron" id="about_mainBody">
+    <div class="jumbotron pagesMainBody">
         <div class="container container-fluid">
           <img src="../images/org_header.svg" width="1080px" height="360px" />
-          <h1 id="aboutMainH1">About Us</h1>
-
-          <h3 id="aboutMainH3">We make media accessible to everybody</h3>
-          <p id="aboutMainPara">
-            CCExtractor Development is an informal (meaning we're not incorporated anywhere) organization that exists to coordinate the development efforts of the volunteers that contribute to the software and to manage our participation in specific events such as Google Summer of Code and Code-In.<br /><br />
+          <h1 class="pagesMainH1">About Us</h1>
+          <br />
+          <h3 class="pagesMainH3">We make media accessible to everybody.</h3>
+          <br />
+          <p class="pagesMainPara">
+            &emsp;&emsp;CCExtractor Development is an informal (meaning we're not incorporated anywhere) organization that exists to coordinate the development efforts of the volunteers that contribute to the software and to manage our participation in specific events such as Google Summer of Code and Code-In.
             We create the de-facto open source tool for everything related to media (TV, movies, etc) accessibility via subtitles. So if you ever watch something subtitled to learn a second language or because you have a hearing disability, chances are we were involved.<br />
           </p>
         </div>
