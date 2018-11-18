@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #582841;
+}
+
 /* Scroll.js Pre-req.  */
 
 html.sr .load-hidden {
@@ -136,18 +140,18 @@ strong {
   margin: 6rem;
 }
 
-#mainH1 {
+.mainH1 {
   font-weight: bold;
   font-size: 2.5rem;
 }
 
-#mainH3 {
+.mainH3 {
   position: relative;
   top: 3rem;
   color: #FFFFFF;
 }
 
-#subMain {
+.subMain {
   position: relative;
   top: 3.5rem;
   color: #FFFFFF;
@@ -192,7 +196,7 @@ strong {
   padding: 40px;
 }
 
-#sectHead {
+.sectHead {
   font-weight: bold;
 }
 
@@ -249,4 +253,45 @@ strong {
   color: #F99E4C;
   font-size: 1.25rem;
   margin-left: -1.25rem;
+}
+
+
+
+
+/*---------------------*/
+/* -- About.htm CSS -- */
+/*---------------------*/
+
+#about_JT {
+  background: url('../images/cross-grid.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+}
+
+#about-us_animated {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 5.75rem;
+}
+
+#about_mainBody {
+  position: relative;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#aboutMainH1 {
+  font-weight: bold;
+}
+
+#aboutMainH1,
+#aboutMainH3,
+#aboutMainPara {
+  padding: 1.75rem;
 }

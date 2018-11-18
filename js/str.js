@@ -13,7 +13,7 @@ var fadeFromBottom = {
 }
 
 ScrollReveal().reveal(
-  '#logo_stylized, #sectHead, #sectPara, .sectLinks, #sectSubHead', fadeFromTop
+  '#logo_stylized, .sectHead, .sectPara, .sectLinks, .sectSubHead', fadeFromTop
 );
 
 ScrollReveal().reveal(
