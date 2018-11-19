@@ -296,7 +296,7 @@ form {
 
 
 .pagesJT {
-  background: url('../images/cross-grid.png');
+  background-color: #351929;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -392,6 +392,11 @@ form {
 
   html {
     font-size: 80.5%;
+  }
+
+  .nav-item {
+    color: #F36F38;
+    align-content: center;
   }
 
   /*#maincontainer {
