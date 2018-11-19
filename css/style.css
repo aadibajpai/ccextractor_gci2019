@@ -339,9 +339,13 @@ form {
 .pagesList,
 .pagesListItems {
   list-style-type: none;
-  margin-top: 0.75rem;
+  margin-top: 6rem;
   margin-left: -1.25rem;
   display: subgrid;
+}
+
+#thrCat {
+  margin-top: 10rem;
 }
 
 .pagesLinks {
@@ -377,6 +381,9 @@ form {
   color: #191919;
 }
 
+kbd {
+  background-color: #D8D8D8;
+}
 
 
 
@@ -389,10 +396,6 @@ form {
 
 
 @media (max-width: 599px) {
-
-  html {
-    font-size: 80.5%;
-  }
 
   .nav-item {
     color: #F36F38;
@@ -455,11 +458,30 @@ form {
   .sect3container {
     margin-top: -12rem;
   }
+
+  .pagesJT {
+    background-color: #351929;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 200px;
+  }
+
+  .animated_svg {
+    position: relative;
+    display: block;
+    height: 450px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10rem;
+  }
+
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
   html {
-    font-size: 82.5%;
+    font-size: 100%;
   }
 
   img {
