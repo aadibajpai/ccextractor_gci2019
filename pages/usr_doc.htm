@@ -28,19 +28,20 @@
         <a href="https://ccextractor.org/" class="navbar-brand">
           <img id="logo" src="../images/ccx_header_animated.svg" width="200px" height="50px" alt="" />
         </a>
-          <ul class="nav navbar-nav navbar-left mr-auto">
-
-          </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="nav navbar-nav navbar-dark navbar-right ml-auto">
               <li class="nav-item">
                   <a class="nav-link" href="../index.htm">HOME</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="about.htm">ABOUT US<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="about.htm">ABOUT US</a>
               </li>
               <li class="nav-item dropdown active">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    DOCUMENTATION <span class="sr-only">(current)</span>
+                    DOCUMENTATION<span class="sr-only">(current)</span>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="usr_doc.htm">User Documentation</a>
@@ -61,15 +62,16 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit"><span class="fas fa-search"></span></button>
+            <button class="btn btn-outline-light" id="searchButton" type="submit"><i class="fas fa-search"></i></button>
           </form>
+        </div>
         </div>
     </div>
 
     <div class="jumbotron pagesJT">
         <div id="container container-fluid">
           <div class="animated_header">
-            <img src="../images/usr_doc_animated.svg" class="animated_svg" alt="ABOUT" width="768px" height="480px;" />
+            <!--<img src="../images/usr_doc_animated.svg" class="animated_svg" alt="ABOUT" width="768px" height="480px;" />-->
           </div>
         </div>
     </div>
@@ -84,112 +86,112 @@
                 <img class="card-img-top" src="../images/link_icons/realtime_logo.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Real-time Demo</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr"><i class="fas fa-globe-americas"></i>&ensp;Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/download.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Downloads</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/changelog.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Changelog</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr"><i class="fas fa-globe-americas"></i>&ensp;Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/commandline.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Using the Command Line Tool</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/windows_gui.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Using the Windows GUI</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/chat.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">How to Chat with the Team</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/extract_burned.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Extracting Burned-in Subtitles</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/cea-708.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Extracting CEA-708 Subtitles</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/translate.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Translating Subtitles in Real Time</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/cross-platform.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Using the Cross-platform GUI</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/step-by-step.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Extracting Closed Captions from a DVD (Step-by-step)</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/hdhomerun.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Working with HDHomeRun</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/spupng.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">What does SPUPNG mean?</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/tvsamples.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">TV Samples</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/donate.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Donate</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
               <div class="card">
                 <img class="card-img-top" src="../images/link_icons/externalprojects.svg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Cool External Projects that Use Subtitles or Use Sorcery with a Video Stream</h5>
-                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-outline btn_usr">Open</a>
                 </div>
               </div>
             </div>

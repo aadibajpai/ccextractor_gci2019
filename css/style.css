@@ -71,14 +71,14 @@ html.sr .load-hidden {
   color: #FFFFFF
 }
 
-.btn-info,
-.btn-info:hover {
+.btn-usr,
+.btn-usr:hover {
   background-color: #582841 !important;
   border-color: #582841 !important;
   box-shadow: none !important;
 }
 
-.btn-info:active {
+.btn-usr:active {
   background-color: #26111D !important;
   border-color: #26111D !important;
   box-shadow: none;
@@ -394,8 +394,8 @@ form {
 
 @media (max-width: 599px) {
 
-  #maincontainer{
-    overflow-y: hidden;
+  #maincontainer {
+    min-height: auto;
   }
 
   #mainBackgroundItem,

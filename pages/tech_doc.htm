@@ -28,19 +28,20 @@
         <a href="https://ccextractor.org/" class="navbar-brand">
           <img id="logo" src="../images/ccx_header_animated.svg" width="200px" height="50px" alt="" />
         </a>
-          <ul class="nav navbar-nav navbar-left mr-auto">
-
-          </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="nav navbar-nav navbar-dark navbar-right ml-auto">
               <li class="nav-item">
                   <a class="nav-link" href="../index.htm">HOME</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="about.htm">ABOUT US<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="about.htm">ABOUT US</a>
               </li>
               <li class="nav-item dropdown active">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    DOCUMENTATION <span class="sr-only">(current)</span>
+                    DOCUMENTATION<span class="sr-only">(current)</span>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="usr_doc.htm">User Documentation</a>
@@ -61,66 +62,118 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit"><span class="fas fa-search"></span></button>
+            <button class="btn btn-outline-light" id="searchButton" type="submit"><i class="fas fa-search"></i></button>
           </form>
+        </div>
         </div>
     </div>
 
     <div class="jumbotron pagesJT">
         <div id="container container-fluid">
           <div class="animated_header">
-            <img src="../images/tech_doc_animated.svg" class="animated_svg" alt="ABOUT" width="768px" height="480px;" />
+            <!--<img src="../images/tech_doc_animated.svg" class="animated_svg" alt="ABOUT" width="768px" height="480px;" />-->
           </div>
         </div>
     </div>
 
     <div class="jumbotron pagesMainBody">
         <div class="container container-fluid">
-          <h1 class="pagesMainH1">Technical Documentaion</h1>
+          <h1 class="pagesMainH1">Technical Documentation</h1>
           <h3 class="pagesMainH3">Handy for Developers!</h3>
-          <p>Most of these pages are the result of Summer of Code work.</p>
           <div class="pagesWrapper">
-            <ul class="pagesLinks">
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:general:gettingstartedwithourcode" class="btn btn-outline">Getting started with our code</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:general:rotating_capture_system_with_hdhomerun" class="btn btn-outline">Rotating capture system with HDHomeRun</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:general:subtitle_standards_around_the_world" class="btn btn-outline">Subtitle standards around the world</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:gsoc:ccextractor_regression_testing" class="btn btn-outline">Regression system</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:gsoc:2016:abishek:subtitle_downloader" class="btn btn-outline">Online real-time repository</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:gsoc:2016:abishek:subtitle_downloader" class="btn btn-outline">Subtitle Downloader (user)</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:gsoc:subtitle_extractor_technical_docs" class="btn btn-outline">Subtitle Downloader (technical)</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:gsoc:dvd_subtitles_technical_documentation_gsoc_16" class="btn btn-outline">DVD Subtitles Technical Documentation</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:gsoc:python_extension_module_technical_documentation_gsoc_17" class="btn btn-outline">Python extension module for CCExtractor</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:gsoc:python_extension_module_compilation_documentation_gsoc_17" class="btn btn-outline">Compiling the Python Extension module for CCExtractor</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:general:vagrant" class="btn btn-outline">Building CCExtractor inside a Vagrant box</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:codein:activity_extractor_user_docs" class="btn btn-outline">Activity Extractor (user)</a>
-                </li>
-                <li class="pagesLinkItems">
-                    <a href="https://ccextractor.org/public:codein:activity_extractor_technical_docs" class="btn btn-outline">Activity Extractor (technical)</a>
-                </li>
-            </ul>
+            <div class="card-columns m-2">
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/gettingstarted.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Getting Started with our Code</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/rotatingcapture.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Rotating Capture System with HDHomeRun</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/ccstandards.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Subtitle Standards Around the World</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/regression.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Regression System</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/repository.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Online Real-time Repository</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/subtitle-downloader_usr.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Subtitle Downloader (User)</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/subtitle-downloader_tech.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Subtitle Downloader (Technical)</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/dvd-sub_doc.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">DVD Subtitles Technical Documentation</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/python_extension.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Python Extension Module</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/python_compile.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Compiling the Python Extension Module for CCExtrator</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/vagrant_box.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Building CCExtractor inside a Vagant Box</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/activity_usr.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Activity Extractor (User)</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="../images/link_icons/tech/activity_tech.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Activity Extractor (Technical)</h5>
+                  <a href="http://realtimedemo.ccextractor.org:8080/" class="btn btn-info">Open</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </div>

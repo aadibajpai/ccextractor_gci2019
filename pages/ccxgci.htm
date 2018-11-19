@@ -28,15 +28,16 @@
         <a href="https://ccextractor.org/" class="navbar-brand">
           <img id="logo" src="../images/ccx_header_animated.svg" width="200px" height="50px" alt="" />
         </a>
-          <ul class="nav navbar-nav navbar-left mr-auto">
-
-          </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="nav navbar-nav navbar-dark navbar-right ml-auto">
               <li class="nav-item">
                   <a class="nav-link" href="../index.htm">HOME</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="about.htm">ABOUT US<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="about.htm">ABOUT US</a>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,7 +51,7 @@
               </li>
               <li class="nav-item dropdown active">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    PROGRAMS <span class="sr-only">(current)</span>
+                    PROGRAMS<span class="sr-only">(current)</span>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="ccxgci.htm">Google Code-in 2018</a>
@@ -61,15 +62,16 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit"><span class="fas fa-search"></span></button>
+            <button class="btn btn-outline-light" id="searchButton" type="submit"><i class="fas fa-search"></i></button>
           </form>
+        </div>
         </div>
     </div>
 
     <div class="jumbotron pagesJT">
         <div id="container container-fluid">
           <div class="animated_header">
-            <img src="../images/ccxgci_animated.svg" class="animated_svg" alt="ABOUT" width="768px" height="480px;" />
+            <!--<img src="../images/ccxgci_animated.svg" class="animated_svg" alt="ABOUT" width="768px" height="480px;" />-->
           </div>
         </div>
     </div>
