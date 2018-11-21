@@ -7,6 +7,7 @@ html {
 
 body {
   background-color: #582841;
+  background-image: url('../images/pagesBackground.svg');
 }
 
 body .jumbotron .container .row {
@@ -143,15 +144,14 @@ html.sr .load-hidden {
 .btn-info {
   color: #F36F38;
   background-color: #26111D;
-  border-color: #26111D;
+  border-color: #F36F38;
   border-radius: 1.25em;
 }
 
 .btn-info:hover {
   color: #F36F38;
   background-color: #13080E;
-  border-color: #13080E;
-  color: #F36F38;
+  border-color: #F36F38;
 }
 
 #languages {
@@ -380,7 +380,7 @@ form {
 
 
 .pagesJT {
-  background-color: #351929;
+  background-color: rgba(53,25,41,0.5);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -399,6 +399,8 @@ form {
 }
 
 .pagesMainBody {
+  background-color: rgba(12, 12, 12, 0.45);
+  color: #FF3639;
   position: relative;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -468,6 +470,10 @@ form {
   color: #191919;
 }
 
+.card {
+  background-color: rgba(12,12,12,0.5);
+}
+
 kbd {
   background-color: #D8D8D8;
 }
@@ -482,159 +488,58 @@ kbd {
 
 
 
-@media screen and (max-width: 599px) {
+    /*==========  Mobile First Method  ==========*/
 
-  html {
-    font-size: 85%;
-  }
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
 
-  .btn-info {
-    background-color: #26111D;
-    border-color: #26111D;
-    border-radius: 1.25em;
-    width: 100%
+    }
 
-  }
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
 
-  .navbar {
-    padding-bottom: 12px;;
-  }
+    }
 
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
 
-  .navbar .navbar-collapse {
-    text-align: center;
-  }
+    }
 
-  #mainBackgroundItem,
-  #sect2BackgroundItem,
-  #sect3BackgroundItem {
-    visibility: hidden !important;
-  }
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
 
-  /*#maincontainer {
-    min-height: auto;
-  }*/
+    }
 
-  .navbar-brand {
-    image-resolution: 75%;
-  }
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
 
-  #main {
-    background: url('../images/mainBackgroundMobile.svg');
-    position: relative;
-    top: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 64rem;
+    }
 
-  }
 
-  #sect2Background {
-    background: url('../images/sect2BackgroundMobile.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: -12rem;
-    height: 64rem;
 
-  }
+    /*==========  Non-Mobile First Method  ==========*/
 
-  #sect3Background {
-    background: url('../images/sect3BackgroundMobile.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 5rem;
-    height: 64rem;
-  }
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
 
-  #mainBackgroundItem,
-  #sect2BackgroundItem,
-  #sect3BackgroundItem {
-    margin-top: 5.5rem;
-    margin-left: 0;
-    width: 420px;
-    height: auto;
-    float: none;
-  }
+    }
 
-  #mainBackgroundItem {
-    margin-left: 0;
-    width: 420px;
-    height: auto;
-  }
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
 
-  .maincontainer,
-  .sect2container,
-  .sect3container {
-    margin-top: -20rem;
-  }
+    }
 
-  .pagesJT {
-    background-color: #351929;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    height: 200px;
-  }
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
 
-  .animated_svg {
-    position: relative;
-    display: block;
-    height: 450px;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 10rem;
-  }
+    }
 
-}
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
 
-@media (min-width: 600px) and (max-width: 899px) {
-  html {
-    font-size: 100%;
-  }
+    }
 
-  img {
-    max-width: 400px;
-  }
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
 
-  .wrapper {
-    font-size: auto;
-  }
-
-  #mainBackgroundItem {
-    float: right;
-    margin-top: 2rem;
-  }
-}
-
-@media (min-width: 600px) {
-
-}
-
-@media (min-width: 900px) and (max-width: 1199px) {
-
-}
-
-@media (min-width: 900px) {
-
-}
-
-@media (min-width: 1200px) and (max-width: 1799px) {
-
-}
-
-@media (min-width: 1200px) {
-
-}
-
-@media (min-width: 1800px) {
-
-}
+    }
