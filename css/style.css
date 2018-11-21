@@ -103,6 +103,10 @@ html.sr .load-hidden {
   color: #FFF;
 }
 
+.dropdown-item:active {
+  background-color: #EF4648;
+}
+
 .navbar-nav > li > .dropdown-menu {
   background-color: rgba(25,25,25,0.75);
 }
