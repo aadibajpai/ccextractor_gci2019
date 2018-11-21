@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #582841;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Scroll.js Pre-req.  */
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+/* Global Font */
+
+* {
+  font-family: Ubuntu, sans-serif;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  background-color: rgba(25, 25, 25, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #F36F38;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #EF4648 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:active {
+  color: #EF4648 !important;
+}
+
+
+/* From Hover CSS (Override) */
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #F36F38;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/*----------------------------------------*/
+
+.navbar-brand {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.dropdown-item {
+  color: #F36F38;
+  margin-top: 0.33rem;
+}
+
+.dropdown-item:active {
+  background-color: #F36F38;
+}
+
+.dropdown-item:hover {
+  background-color: #F36F38;
+  color: #FFF;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: rgba(25,25,25,0.75);
+}
+
+.btn-outline,
+.btn-outline-light {
+  border-radius: 30px;
+  border-color: #F36F38;
+  color: #F36F38;
+}
+
+.btn-outline:hover,
+.btn-outline-light:hover {
+  background-color: #F36F38;
+  border-color: #F36F38;
+  color: #FFFFFF
+}
+
+.btn-usr,
+.btn-usr:hover {
+  background-color: #582841 !important;
+  border-color: #582841 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.btn-usr:active {
+  background-color: #26111D !important;
+  border-color: #26111D !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-info {
+  color: #F36F38;
+  background-color: #26111D;
+  border-color: #26111D;
+  border-radius: 1.25em;
+}
+
+.btn-info:hover {
+  color: #F36F38;
+  background-color: #13080E;
+  border-color: #13080E;
+  color: #F36F38;
+}
+
+#languages {
+  position: relative;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #F36F38;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #F36F38;
+  outline: 0 none;
+}
+
+
+#searchBar {
+  border-radius: 20px;
+  border-color: #F36F38;
+  width: auto;
+  background-color: rgba(0,0,0,0);
+  color: #F36F38;
+}
+
+#searchBar::placeholder {
+  color: #F36F38;
+}
+
+#searchButton {
+  margin-left: 0.5rem;
+}
+
+form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.jumbotron {
+  border-radius: 0 !important;
+  max-width: 100%;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-color: #F36F38;
+  border-color: #F36F38;
+  border-radius: 20px;
+  color: #FFFFFF
+}
+
+/* Main Sector */
+
+#main {
+  background-image: url('../images/mainBackground.svg');
+  background-color: #582841;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 40rem;
+  text-align: left;
+}
+
+.floating {
+    -webkit-animation-name: floating;
+            animation-name: floating;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@-webkit-keyframes floating {
+    from {
+      -webkit-transform: translate(0,  0px);
+              transform: translate(0,  0px);
+    }
+    65%  {
+       -webkit-transform: translate(0, 10px);
+               transform: translate(0, 10px);
+     }
+    to   {
+       -webkit-transform: translate(0, -0px);
+               transform: translate(0, -0px);
+     }
+}
+
+@keyframes floating {
+    from {
+      -webkit-transform: translate(0,  0px);
+              transform: translate(0,  0px);
+    }
+    65%  {
+       -webkit-transform: translate(0, 10px);
+               transform: translate(0, 10px);
+     }
+    to   {
+       -webkit-transform: translate(0, -0px);
+               transform: translate(0, -0px);
+     }
+}
+
+#mainBackgroundItem {
+  position: relative;
+  float: right;
+}
+
+.mainH1 {
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+
+.mainH3 {
+  position: relative;
+  top: 3rem;
+  color: #FFFFFF;
+}
+
+.mainH4 {
+  position: relative;
+  color: #FFFFFF;
+}
+
+.subMain {
+  position: relative;
+  top: 3.5rem;
+  color: #FFFFFF;
+}
+
+#subCont {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+/* Main Sector - Program Buttons */
+
+#download {
+  width: 30%;
+}
+
+#gciButton,
+#gsocButton {
+  position: relative;
+  top: 3.75rem;
+  color: #F36F38;
+}
+
+/* Google Code-in Sector */
+
+#sect2Background {
+  background-image: url('../images/sect2Background.svg');
+  background-color: #582841;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  width: 100%;
+  height: 40rem;
+  text-align: left;
+}
+
+#sect2BackgroundItem {
+  position: relative;
+  float: left;
+}
+
+#sect2container {
+  position: relative;
+  float: right;
+  position: static;
+  color: white;
+}
+
+.sectHead {
+  font-weight: bold;
+  width: auto;
+  height: auto;
+}
+
+#gci_logo_stylized {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-left: -0.75rem;
+}
+
+/* Google Summer of Code Sector */
+
+#sect3Background {
+  background-image: url('../images/sect3Background.svg');
+  background-color: #582841;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+  height: 40rem;
+  text-align: left;
+}
+
+#sect3BackgroundItem {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+#sect3container {
+  position: relative;
+  float: left;
+  color: white;
+}
+
+#gsoc_logo_stylized {
+  position: relative;
+  margin-left: -0.75rem;
+}
+
+/* Sector Links */
+
+.sectLinks:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#sectLinks_1 {
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.sectLinks {
+  color: #F99E4C;
+  font-size: 1.25rem;
+  margin-left: -1.25rem;
+  padding: 1.25rem;
+  list-style-type: none;
+}
+
+
+/*---------------------*/
+/*   -- Pages CSS --   */
+/*---------------------*/
+
+
+
+.pagesJT {
+  background-color: #351929;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+}
+
+.animated_svg {
+  position: relative;
+  display: block;
+  height: 450px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 6rem;
+}
+
+.pagesMainBody {
+  position: relative;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.75rem !important;
+}
+
+.pagesMainH1 {
+  font-weight: bold;
+}
+
+.pagesMainH1,
+.pagesMainH3, {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pagesWrapper {
+  margin-top: 5.75rem;
+}
+
+.pagesList,
+.pagesListItems {
+  list-style-type: none;
+  margin-top: 6rem;
+  margin-left: -1.25rem;
+  display: subgrid;
+}
+
+#thrCat {
+  margin-top: 10rem;
+}
+
+.pagesLinks {
+  color: #F99E4C;;
+}
+
+.pagesLinks:hover {
+  color: #EF4648;
+  text-decoration: none;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    -webkit-column-count: 4;
+            column-count: 4;
+    display: inline-block;
+  }
+  @include media-breakpoint-only(xl) {
+    -webkit-column-count: 5;
+            column-count: 5;
+    display: inline-block;
+  }
+}
+
+.pagesMainPara {
+  display: inline-block;
+}
+
+.pagesListHeader {
+  color: #F99E4C;
+}
+
+.pagesListPara {
+  list-style-type: disc;
+  color: #191919;
+}
+
+kbd {
+  background-color: #D8D8D8;
+}
+
+
+
+
+
+/*--------------------*/
+/* -- Responsivity -- */
+/*--------------------*/
+
+
+
+@media screen and (max-width: 599px) {
+
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 900px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1800px) {
+
+}
