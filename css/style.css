@@ -471,12 +471,12 @@ form {
   color: #EF4648;
 }
 
-.card {
-  background-color: rgba(12,12,12,0.5);
+#tagsCard {
+  background-color: white !important;
 }
 
 kbd {
-  background-color: #D8D8D8;
+  background-color: #191919 !important;
 }
 
 
@@ -1057,7 +1057,7 @@ kbd {
   }
 
   .card {
-    background-color: rgba(12,12,12,0.5);
+    background-color: white;
   }
 
   kbd {
