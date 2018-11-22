@@ -512,13 +512,19 @@ kbd {
     background-image: url('../images/mainBackgroundMobile.svg');
   }
 
-  #mainBackgroundItem {
+  #mainItemDesktop {
     display: none;
+  }
+
+  #mainItemMobile {
+    width: auto;
+    height: 12rem;
+    margin-top: -1.25rem;
   }
 
   #mainContent1 {
     font-size: 80% !important;
-    margin-top: 20rem;
+    margin-top: 8rem;
   }
 
   #mainContent2 {
@@ -536,30 +542,41 @@ kbd {
 
   #sect2Background {
     background-image: url('../images/sect2BackgroundMobile.svg');
-    height: 53rem;
+    height: 60rem;
   }
 
-  #sect2BackgroundItem {
+  #sect2ItemDesktop {
     display: none;
   }
 
+  #sect2ItemMobile {
+    position: relative;
+  }
+
   #sect2Content {
-    font-size: 75% !important;
-    margin-top: 22rem;
+    font-size: 95%;
+    margin-top: 8.5rem;
   }
 
   #sect3Background {
     background-image: url('../images/sect3BackgroundMobile.svg');
-    height: 50rem;
+    height: 65rem;
   }
 
-  #sect3BackgroundItem {
+  #sect3ItemDesktop {
     display: none;
   }
 
+  #sect3ItemMobile {
+    position: relative;
+    height: 19.25rem;
+    margin-top: 4.25rem;
+    width: auto;
+  }
+
   #sect3Content {
-    font-size: 75% !important;
-    margin-top: 20rem;
+    font-size: 95%;
+    margin-top: 10rem;
   }
 
   #gci_logo_stylized,

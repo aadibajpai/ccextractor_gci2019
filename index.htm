@@ -26,7 +26,7 @@
 
   <body>
 
-    <div class="navbar navbar-expand-lg navbar-dark">
+    <div class="navbar static navbar-expand-lg navbar-dark">
       <div class="container">
         <a href="https://ccextractor.org/" class="navbar-brand">
           <img id="logo" src="images/ccx_header_animated.svg" width="200px" height="50px" alt="" />
@@ -72,6 +72,9 @@
     <div class="jumbotron" id="main">
         <div class="container">
           <div class="row">
+            <div id="mainItemMobile" class="col-md-8 justify-content-center">
+              <img src="images/mainBackgroundItem.svg" id="mainBackgroundItem" style="width: 36rem; height: auto; "/>
+            </div>
             <div class="col-md-4 justify-content-start" style="text-align: left;">
                 <div id="mainContent1">
                 <h1><strong>Subtitle Extraction?</strong></h1>
@@ -87,7 +90,7 @@
                   <a href="https://summerofcode.withgoogle.com/archive/2018/organizations/5152211763986432/" class="btn btn-info" style="margin-top: 1.25rem;">Google Summer of Code</a>
                 </div>
             </div>
-            <div class="col-md-8 justify-content-end">
+            <div id="mainItemDesktop" class="col-md-8 justify-content-end">
               <img src="images/mainBackgroundItem.svg" id="mainBackgroundItem" class="floating" style="width: 36rem; height: auto; "/>
             </div>
           </div>
@@ -97,7 +100,10 @@
     <div class="jumbotron" id="sect2Background">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 justify-content-start">
+            <div class="col-md-6 justify-content-start" id="sect2ItemMobile">
+              <img src="images/sect2BackgroundItem.svg" id="sect2BackgroundItem" style="width: 28rem; height: auto; "/>
+            </div>
+            <div class="col-md-6 justify-content-start" id="sect2ItemDesktop">
               <img src="images/sect2BackgroundItem.svg" id="sect2BackgroundItem" class="floating" style="width: 28rem; height: auto; "/>
             </div>
             <div class="col-md-6 justify-content-start" id="sect2Content" style="text-align: left;">
@@ -115,6 +121,9 @@
     <div class="jumbotron" id="sect3Background">
         <div class="container">
           <div class="row">
+            <div class="col-md-6 justify-content-center" id="sect3ItemMobile">
+              <img src="images/sect3BackgroundItem.svg" id="sect3BackgroundItem" style="width: 28rem; height: auto; "/>
+            </div>
             <div class="col-md-6 justify-content-start" id="sect3Content" style="text-align: left;">
               <img src="images/gsoc_stylized.svg" id="gsoc_logo_stylized" style="width: 100%; height: 100px; padding-right: 12rem;"/>
                 <h1><strong>Participating in Summer of Code?</strong></h1>
@@ -125,7 +134,7 @@
                 <p>Check out our page for GSoC to learn more!</p>
                 <a href="pages/ccxgsoc.htm" class="btn btn-info">Get to know us more!</a>
             </div>
-              <div class="col-md-6 justify-content-start">
+              <div class="col-md-6 justify-content-start" id="sect3ItemDesktop">
                 <img src="images/sect3BackgroundItem.svg" id="sect3BackgroundItem" class="floating" style="width: 28rem; height: auto; "/>
               </div>
           </div>
