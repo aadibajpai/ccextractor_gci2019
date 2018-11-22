@@ -1081,4 +1081,16 @@ kbd {
     background-color: #D8D8D8;
   }
 
+  #mainItemMobile {
+    display: none;
+  }
+
+  #sect2ItemMobile {
+    display: none;
+  }
+
+  #sect3ItemMobile {
+    display: none;
+  }
+
 }
