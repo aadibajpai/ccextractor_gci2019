@@ -96,16 +96,13 @@ html.sr .load-hidden {
 }
 
 .dropdown-item:active {
-  background-color: #F36F38;
+  background-color: #F36F38 !important;
+  color: #F36F38;
 }
 
 .dropdown-item:hover {
   background-color: #F36F38;
   color: #FFF;
-}
-
-.dropdown-item:active {
-  background-color: #EF4648;
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -465,9 +462,13 @@ form {
   color: #F99E4C;
 }
 
+.pagesListCCXGCI {
+  color: #EF4648;
+}
+
 .pagesListPara {
   list-style-type: disc;
-  color: #191919;
+  color: #EF4648;
 }
 
 .card {
@@ -1052,7 +1053,7 @@ kbd {
 
   .pagesListPara {
     list-style-type: disc;
-    color: #191919;
+    color: #EF4648;
   }
 
   .card {
