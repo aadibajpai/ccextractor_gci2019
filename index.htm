@@ -20,62 +20,13 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+
   </head>
 
   <body>
 
-    <!--<div class="navbar fixed-top navbar-expand-lg navbar-dark">-->
-      <!--<div class="container">-->
-        <!--<a href="https://ccextractor.org/" class="navbar-brand">-->
-          <!--<img id="logo" src="../images/ccx_header_animated.svg" width="200px" height="50px" alt="" />-->
-        <!--</a>-->
-        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">-->
-          <!--<span class="navbar-toggler-icon"></span>-->
-        <!--</button>-->
-        <!--<div class="collapse navbar-collapse" id="navbarToggler">-->
-          <!--<ul class="nav navbar-nav navbar-dark navbar-right ml-auto">-->
-              <!--<li class="nav-item">-->
-                  <!--<a class="nav-link hvr-underline-from-left" href="../og_index.htm">HOME</a>-->
-              <!--</li>-->
-              <!--<li class="nav-item">-->
-                  <!--<a class="nav-link hvr-underline-from-left" href="../pages/about.htm">ABOUT US</a>-->
-              <!--</li>-->
-              <!--<li class="nav-item dropdown">-->
-                  <!--<a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                    <!--DOCUMENTATION-->
-                  <!--</a>-->
-                  <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-                    <!--<a class="dropdown-item" href="../pages/usr_doc.htm">User Documentation</a>-->
-                    <!--<a class="dropdown-item" href="../pages/tech_doc.htm">Technical Documentation</a>-->
-                  <!--</div>-->
-              <!--</li>-->
-              <!--<li class="nav-item dropdown active">-->
-                  <!--<a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                    <!--PROGRAMS<span class="sr-only">(current)</span>-->
-                  <!--</a>-->
-                  <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-                    <!--<a class="dropdown-item active" href="../pages/index.htm">Google Code-in 2018</a>-->
-                    <!--<a class="dropdown-item" href="../pages/ccxgsoc.htm">Google Summer of Code 2019</a>-->
-                  <!--</div>-->
-              <!--</li>-->
-          <!--</ul>-->
-          <!--<form class="form-inline my-2 my-lg-0">-->
-            <!--<input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">-->
-            <!--<button class="btn btn-outline-light" id="searchButton" type="submit"><i class="fas fa-search"></i></button>-->
-          <!--</form>-->
-        <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--<div class="jumbotron pagesJT">-->
-        <!--<div id="container container-fluid">-->
-            <!--<div class="animated_header">-->
-                <!--<img src="../images/ccxgci_animated.svg" class="animated_svg" alt="ABOUT" width="768px" height="480px;" />-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <div class="jumbotron" id="sect2Background">
+  <div class="jumbotron" id="sect2Background">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 justify-content-start" id="sect2ItemMobile">
@@ -113,14 +64,76 @@
           <div class="pagesWrapper">
             <ul class="pagesList">
                 <li class="pagesListItems">
+                    <h3 class="pagesListHeader"><strong><i class="fas fa-tasks"></i>&ensp;Tasks</strong></h3>
+                    <hr />
+                    <p>We have nice tasks and some more stuff about tasks goes here. Add content here. New stuff this year:</p>
+                    <ul class="pagesListCCXGCI">
+                        <p>
+                            <span style="color: #F36F38; font-size: 1.25rem;"><i class="fas fa-memory"></i><strong>&ensp;Rust</strong></span><br />
+                        </p>
+                        <li class="pagesListPara">
+                            <p>Rust is a relatively new language created by Mozilla (yes, the Firefox guys) to replace C.
+                                It's a super fast language that has the advantages of C but solves most of its problems.
+                                Rust is consistently chosen [ <a class="pagesLinks" href="https://insights.stackoverflow.com/survey/2019">
+                                    https://insights.stackoverflow.com/survey/2019</a> ] as the
+                                most loved language in the most popular developer platform, stackoverflow.
+                            </p>
+                        </li>
+                        <li class="pagesListPara">
+                            <p>If you haven't heard about Rust - don't worry! Just know that it's one of the languages
+                                of the future, and if you want to get started on a new language, you may want to pick
+                                one that is sure to be really popular in the near future, but before everybody else
+                                starts on it.
+                            </p>
+                        </li>
+                        <li class="pagesListPara">
+                            <p>We'll have many tasks that are about getting started, and we'll progress to interesting
+                                exercises as GCI advances.
+                            </p>
+                        </li>
+                        <p>
+                            <span style="color: #F36F38; font-size: 1.25rem;"><i class="fas fa-mobile-alt"></i><strong>&ensp;Flutter</strong></span><br />
+                        </p>
+                        <li class="pagesListPara">
+                            <p>Flutter stuff</p>
+                        </li>
+                        <li class="pagesListPara">
+                            <p>More Flutter stuff.</p>
+                        </li>
+                        <p>
+                            <span style="color: #F36F38; font-size: 1.25rem;"><i class="fas fa-closed-captioning"></i><strong>&ensp;CCExtractor (core)</strong></span><br />
+                        </p>
+                        <li class="pagesListPara">
+                            <p>CCExtractor stuff</p>
+                        </li>
+                        <li class="pagesListPara">
+                            <p>More CCExtractor stuff.</p>
+                        </li>
+                        <p>
+                            <span style="color: #F36F38; font-size: 1.25rem;"><i class="fab fa-python"></i><strong>&ensp;Python</strong></span><br />
+                        </p>
+                        <li class="pagesListPara">
+                            <p>Snek stuff</p>
+                        </li>
+                        <li class="pagesListPara">
+                            <p>More snek stuff.</p>
+                        </li>
+                        <p>
+                        <span style="color: #F36F38; font-size: 1.25rem;"><i class="fas fa-file-video"></i><strong>&ensp;FFmpeg</strong></span><br />
+                        </p>
+                        <li class="pagesListPara">
+                        <p>FFmpeg stuff</p>
+                        </li>
+                        <li class="pagesListPara">
+                        <p>More FFmpeg stuff.</p>
+                        </li>
+                    </ul>
+                    <hr><br><br>
                     <h3 class="pagesListHeader"><strong><i class="fas fa-check-circle"></i>&ensp;Things to know!</strong></h3>
                     <hr />
                     <ul class="pagesListCCXGCI">
                       <li class="pagesListPara">
                         <p>For tasks that require some resources in general we will provide them for you, including access to videos, system accounts, etc.</p>
-                      </li>
-                      <li class="pagesListPara">
-                        <p>This year we are going to have some system administration tasks. <strong>We will provide you with root access</strong> (Yes! We're that cool) to a small server for interested students to play with. Check out our sysadmin tasks.</p>
                       </li>
                       <li class="pagesListPara">
                         <p>We can't stress this enough: Winners are those that do the hard tasks. Amount of tasks is not so important.</p>
@@ -252,6 +265,50 @@
         </div>
     </div>
 
+      <div class="jumbotron pagesMainBody">
+      <div class="alert" role="alert">
+          How much wood could the woodchuck chuck if the woodchuck could chuck wood?
+      </div>
+      <div class="container container-fluid">
+        <h1 class="pagesMainH1">Join our Slack!</h1>
+        <h3 class="pagesMainH3">Come hang out with us! Become part of the CCExtractor community! Request an invitation using this form </h3>
+        <form id="slack_form" onsubmit="submitSlackInfo(); return false" method="POST">
+          <div class="form-row form-group">
+            <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="First name" name="firstName" id="firstName">
+            </div>
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="Last name" name="lastName" id="lastName">
+            </div>
+          </div>
+          <span class="input-group-addon">-</span>
+          <div class="form-group form-row">
+            <div class="col-sm-6">
+              <input placeholder="Email here" type="email" class="form-control" name="email" id="email" required></input>
+            </div>
+            <div class="col-sm-6">
+              <button class="btn btn-info form-control" placeholder="Ready to join!" type="submit">Invite me!</button> 
+              <!-- Google reCAPTCHA widget -->
+              <div class="g-recaptcha" data-sitekey='6Lcg5MEUAAAAAJBCgiZqPmcSGybpFFnhhXiHWCfd' data-badge="bottom-right" data-size="invisible" data-theme="dark" data-callback="submitSlackInfo"></div><br>
+              <input type="hidden" id="captcha-response" name="captcha-response" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Handle Slack Requests-->
+    <script src="js/lib.js"></script>
+
+    <script>
+        // Execute Recaptcha when form is submitted
+        document.querySelector("#slack_form").addEventListener("submit", function() {
+          grecaptcha.execute();
+        })
+        window.submitSlackInfo = submitSlackInfo;
+       
+    </script>
 
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
