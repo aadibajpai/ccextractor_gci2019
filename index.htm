@@ -20,6 +20,8 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+
   </head>
 
   <body>
@@ -263,6 +265,50 @@
         </div>
     </div>
 
+      <div class="jumbotron pagesMainBody">
+      <div class="alert" role="alert">
+          How much wood could the woodchuck chuck if the woodchuck could chuck wood?
+      </div>
+      <div class="container container-fluid">
+        <h1 class="pagesMainH1">Join our Slack!</h1>
+        <h3 class="pagesMainH3">Come hang out with us! Become part of the CCExtractor community! Request an invitation using this form </h3>
+        <form id="slack_form" onsubmit="submitSlackInfo(); return false" method="POST">
+          <div class="form-row form-group">
+            <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="First name" name="firstName" id="firstName">
+            </div>
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="Last name" name="lastName" id="lastName">
+            </div>
+          </div>
+          <span class="input-group-addon">-</span>
+          <div class="form-group form-row">
+            <div class="col-sm-6">
+              <input placeholder="Email here" type="email" class="form-control" name="email" id="email" required></input>
+            </div>
+            <div class="col-sm-6">
+              <button class="btn btn-info form-control" placeholder="Ready to join!" type="submit">Invite me!</button> 
+              <!-- Google reCAPTCHA widget -->
+              <div class="g-recaptcha" data-sitekey='6Lcg5MEUAAAAAJBCgiZqPmcSGybpFFnhhXiHWCfd' data-badge="bottom-right" data-size="invisible" data-theme="dark" data-callback="submitSlackInfo"></div><br>
+              <input type="hidden" id="captcha-response" name="captcha-response" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Handle Slack Requests-->
+    <script src="js/lib.js"></script>
+
+    <script>
+        // Execute Recaptcha when form is submitted
+        document.querySelector("#slack_form").addEventListener("submit", function() {
+          grecaptcha.execute();
+        })
+        window.submitSlackInfo = submitSlackInfo;
+       
+    </script>
 
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
