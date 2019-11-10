@@ -493,6 +493,13 @@ kbd {
   background-color: #D8D8D8;
 }
 
+form > .fas {
+  padding: 7px;
+}
+
+.container > .alert{
+  display: none;
+}
 
 
 
