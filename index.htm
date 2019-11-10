@@ -59,8 +59,11 @@
           </p>
           <p class="pagesMainPara"><sub>*Current Page Updated for GCI 2019</sub></p>
           <br /><hr />
-          <div class="alert" role="alert">
-            How much wood could a woodchuck chuck if a woodchuck could chuck wood?
+          <div class="alert alert-dismissable" role="alert">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <p id="alertContent">How much wood could a woodchuck chuck if a woodchuck could chuck wood?</p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            </button>
           </div>
           <h4 id="slack">You can join the CCExtractor Development Slack workspace!</h4>
           <p class="pagesMainPara">Request an invitation using this form: </p><br>
@@ -81,11 +84,12 @@
             <div class="col-sm-6">
               <button class="btn btn-info form-control" placeholder="Ready to join!" type="submit">Invite me!</button> 
               <!-- Google reCAPTCHA widget -->
-              <div class="g-recaptcha" data-sitekey='6Lcg5MEUAAAAAJBCgiZqPmcSGybpFFnhhXiHWCfd' data-badge="bottom-right" data-size="invisible" data-theme="dark" data-callback="submitSlackInfo"></div><br>
+              <div class="g-recaptcha" data-sitekey='6Lcg5MEUAAAAAJBCgiZqPmcSGybpFFnhhXiHWCfd' data-badge="bottom-right" data-size="invisible" data-theme="dark" data-callback="submitSlackInfo" style="display: none;"></div><br>
               <input type="hidden" id="captcha-response" name="captcha-response" />
             </div>
           </div>
         </form>
+          <sub class="pagesMainPara">*This site is protected by reCAPTCHA and the Google<a href="https://policies.google.com/privacy" class="pagesLinks"> Privacy Policy</a> and<a href="https://policies.google.com/terms" class="pagesLinks"> Terms of Service</a> apply.</sub>
 
           <div class="pagesWrapper">
             <ul class="pagesList">
