@@ -54,13 +54,39 @@
           <h3 class="pagesMainH3">We are glad to hear that! In order to maximize your chances of winning, here are things you should know about us.<sup>*</sup></h3><br />
           <p class="pagesMainPara">
             This is going to be another absolutely amazing GCI year! We have a long and proud history of taking part in the Google Summer of Code with university students, and are excited to participate in GCI again for the 4th year with pre-university students!<br /><br />
-              While it is completely optional, it is highly recommended that you join our <a class="pagesLinks" href="https://www.ccextractor.org/public:general:support#slack">Slack</a> group. All the mentors, org admins, contributors and fellow GCI participants hang out in that group. That's the best place to get quick answers to any query or problem you might have.<hr />
+              While it is completely optional, it is highly recommended that you join our <a class="pagesLinks" href="#slack">Slack</a> group. All the mentors, org admins, contributors and fellow GCI participants hang out in that group. That's the best place to get quick answers to any query or problem you might have.<hr />
             <sub>Can't join the Slack group? It's no problem! We try to be super fast to respond to all comments and submissions in the GCI website. If you prefer email, you can email us at code-in@ccextractor.org. There's also a mailing list/Google group for CCExtractor : <a class="pagesLinks" href="https://groups.google.com/forum/#!forum/ccextractor-dev">https://groups.google.com/forum/#!forum/ccextractor-dev</a> if that's how you sail!</sub>
           </p>
           <p class="pagesMainPara"><sub>*Current Page Updated for GCI 2019</sub></p>
           <br /><hr />
-          <h4>You can join the CCExtractor Development Slack workspace!</h4>
-          <a target="_blank" rel="noopener" href="https://www.ccextractor.org/public:general:support#slack" class="btn btn-outline">Join us!</a>
+          <div class="alert" role="alert">
+            How much wood could a woodchuck chuck if a woodchuck could chuck wood?
+          </div>
+          <h4 id="slack">You can join the CCExtractor Development Slack workspace!</h4>
+          <h3 class="pagesMainH3">Come hang out with us! Become part of the CCExtractor community! Request an invitation using this form </h3>
+        <form id="slack_form" onsubmit="submitSlackInfo(); return false" method="POST">
+          <div class="form-row form-group">
+            <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="First name" name="firstName" id="firstName">
+            </div>
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="Last name" name="lastName" id="lastName">
+            </div>
+          </div>
+          <span class="input-group-addon">-</span>
+          <div class="form-group form-row">
+            <div class="col-sm-6">
+              <input placeholder="Email here" type="email" class="form-control" name="email" id="email" required></input>
+            </div>
+            <div class="col-sm-6">
+              <button class="btn btn-info form-control" placeholder="Ready to join!" type="submit">Invite me!</button> 
+              <!-- Google reCAPTCHA widget -->
+              <div class="g-recaptcha" data-sitekey='6Lcg5MEUAAAAAJBCgiZqPmcSGybpFFnhhXiHWCfd' data-badge="bottom-right" data-size="invisible" data-theme="dark" data-callback="submitSlackInfo"></div><br>
+              <input type="hidden" id="captcha-response" name="captcha-response" />
+            </div>
+          </div>
+        </form>
+
           <div class="pagesWrapper">
             <ul class="pagesList">
                 <li class="pagesListItems">
@@ -271,29 +297,7 @@
       </div>
       <div class="container container-fluid">
         <h1 class="pagesMainH1">Join our Slack!</h1>
-        <h3 class="pagesMainH3">Come hang out with us! Become part of the CCExtractor community! Request an invitation using this form </h3>
-        <form id="slack_form" onsubmit="submitSlackInfo(); return false" method="POST">
-          <div class="form-row form-group">
-            <div class="col-xs-6">
-                <input type="text" class="form-control" placeholder="First name" name="firstName" id="firstName">
-            </div>
-            <div class="col-xs-6">
-              <input type="text" class="form-control" placeholder="Last name" name="lastName" id="lastName">
-            </div>
-          </div>
-          <span class="input-group-addon">-</span>
-          <div class="form-group form-row">
-            <div class="col-sm-6">
-              <input placeholder="Email here" type="email" class="form-control" name="email" id="email" required></input>
-            </div>
-            <div class="col-sm-6">
-              <button class="btn btn-info form-control" placeholder="Ready to join!" type="submit">Invite me!</button> 
-              <!-- Google reCAPTCHA widget -->
-              <div class="g-recaptcha" data-sitekey='6Lcg5MEUAAAAAJBCgiZqPmcSGybpFFnhhXiHWCfd' data-badge="bottom-right" data-size="invisible" data-theme="dark" data-callback="submitSlackInfo"></div><br>
-              <input type="hidden" id="captcha-response" name="captcha-response" />
-            </div>
-          </div>
-        </form>
+      
       </div>
     </div>
 
