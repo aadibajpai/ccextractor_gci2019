@@ -43,13 +43,14 @@ const submitSlackInfo = async function(){
 */
 const displayDialog = function(status, extra){
     const alert = document.querySelector('.alert')
+    const alertContent = document.querySelector('#alertContent')
     if(status == true){
-        alert.innerText = 'Invited to Slack! Check your email'
+        alertContent.innerText = 'Invited to Slack! Check your email'
         alert.classList.add('alert-success')
         alert.classList.remove('alert-danger')
     }
     else{   
-        alert.innerText = `There was an error inviting you to Slack! Try again. Error code: ${extra}`
+        alertContent.innerText = `There was an error inviting you to Slack! Try again. Error code: ${extra}`
         alert.classList.add('alert-danger')
         alert.classList.remove('alert-success')
     }
